@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+     z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+
+.logo span{
+    color: #7d2ae8;
+}
+
+.navigation{
+    margin-left: -300px;
+}
+
+.navigation a{
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover{
+    color: #7d2ae8;
+}
+
+.btn-contact{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+}
+
+.btn-contact:hover{
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.about-section {
+  padding: 80px 8%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-text h2 span {
+  color: #7b3fe4;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-text h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.about-text ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.about-text ul li {
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.about-text ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #7b3fe4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #7b3fe4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* RIGHT SIDE */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text ul li {
+    text-align: left;
+  }
+}
